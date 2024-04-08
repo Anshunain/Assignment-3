@@ -1,4 +1,4 @@
-"""
+ter"""
 Employee Operations Module
 
 This module provides functions for adding, deleting, and updating employee information.
@@ -38,7 +38,18 @@ def update_employee():
             last_name = input("new last name of the employee ")
             date_of_birth = input("new date_of_birth of the employ (YYYY/MM/DD) ")
             start_of_year = int(input(new start year of employee ")
-            position = input("
+            position = input("enter new position of the employees ")
+            salary = float(input("new salary of the employee ")
+                           
+            employee.first_name = first_name
+            employee.last_name = last_name
+            employee.date_of_birth = date_of_birth
+            employee.salary = salary
+            employee.position = position
+
+            print(f"employee with ID {ID}update ")
+            return
+            print(f"No employee with ID{id}found in the system ")
     """
     Update Employee Function
 
