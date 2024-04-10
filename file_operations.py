@@ -25,7 +25,7 @@ def add_employee():
     employee['id'] = input("Enter employee ID: ")
     employee['first_name'] = input("Enter employee ID first name: ")
     employee['last_name'] = input("Enter employee ID last name: ")
-    employee['date_of_birth'] = input("Enter employee's date of birth (YYYY-MM-DD): ")
+    employee['date_of_birth'] = input("Enter employee's date of birth (YYYY-MM-DD):")
     employee['department'] = input("Enter employee's department: ")
     employee['salary'] = float(input("Enter employee's salary: "))
     employees.append(employee)
