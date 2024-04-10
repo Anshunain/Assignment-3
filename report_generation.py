@@ -28,7 +28,7 @@ employees = get_employees()
 
     print("\nList of position with Average Age and Salary:")
     for employee in position:
-        avg_age, avg_salary = calculate_position_stats(employees, position)
+        avg_age, avg_salary = calculate_position_status(employees, position)
         print(f"employee: {position}, Average Age: {avg_age}, Average Salary: {avg_salary}")
 
     print("\nEmployees in Each position:")
@@ -38,7 +38,7 @@ employees = get_employees()
         total_salary = sum(employee['salary'] for employee in position_employees)
         for employee in position_employees:
             print(
-                f"ID: {employee['id']}, Name: {employee['name']}, Date of Birth: {employee['dob']}, Salary: {employee['salary']}, Total Salary for position: {total_salary}")
+                f"ID: {employee['id']}, Name: {employee['name']}, Date of Birth: {employee['date of birth']}, Salary: {employee['salary']}, Total Salary for position: {total_salary}")
 
 
 def get_position():
@@ -47,9 +47,9 @@ def get_position():
 
 def get_employees():
     return [
-        {"id": 1, "name": "Pusker", "position": "Manager", "dob": "1980-05-15", "salary": 160000},
+        {"id": 1, "name": "Komal", "position": "Manager", "dob": "1980-05-15", "salary": 160000},
         {"id": 2, "name": "Anshu", "position": "Engineer", "dob": "1975-12-20", "salary": 90000},
-        {"id": 3, "name": "Anshil", "position": "Analyst", "dob": "1990-08-10", "salary": 75000},
+        {"id": 3, "name": "Manpreet", "position": "Analyst", "dob": "1990-08-10", "salary": 75000},
     ]
 
 
