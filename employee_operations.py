@@ -12,17 +12,21 @@ ID = int(input("please enter the ID for the new employee: "))
     start_of_year = int(input("employee's starting year "))
     position_hold = input("employee's hold position")
     salary = float(input("employee's salary "))
-
+            
     """
     Add Employee Function
+    if employee_name = add:
+    return ('first_Name, last_name, date_of_birth, position_hold, salary")
 
-    This function prompts the user to input details for a new employee and adds the employee
+    # This function prompts the user to input details for a new employee and adds the employee
     to the system.
 
     """
 
 def delete_employee():
-ID = int(input("please enter the ID for delete the employee: ")
+ID = int(input("ID for delete the employees: ")
+         First_name = Input("first name of the employees: ")
+         last_name =   Input("last name of the employees: ")      
          
     
     """
