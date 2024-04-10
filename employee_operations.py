@@ -6,11 +6,11 @@ This module provides functions for adding, deleting, and updating employee infor
 
 def add_employee():
 ID = int(input("please enter the ID for the new employee: "))
-    firstName = input("employee's firstname ")
-    last_name = input("employee's lastname ")
-    date_of_birth = input("employee's date of birth in (YYYY/MM/DD) ")
+    first_Name = input("first name of employees ")
+    last_name = input("last name of the employees ")
+    date_of_birth = input("date of birth of employees in (YYYY/MM/DD) ")
     start_of_year = int(input("employee's starting year "))
-    position = input("employee's position")
+    position_hold = input("employee's hold position")
     salary = float(input("employee's salary "))
 
     """
@@ -22,6 +22,9 @@ ID = int(input("please enter the ID for the new employee: "))
     """
 
 def delete_employee():
+ID = int(input("please enter the ID for delete the employee: ")
+         
+    
     """
     Delete Employee Function
 
@@ -38,7 +41,7 @@ def update_employee():
             last_name = input("new last name of the employee ")
             date_of_birth = input("new date_of_birth of the employ (YYYY/MM/DD) ")
             start_of_year = int(input(new start year of employee ")
-            position = input("enter new position of the employees ")
+            position_update = input("enter new position updated of the employees ")
             salary = float(input("new salary of the employee ")
                            
             employee.first_name = first_name
