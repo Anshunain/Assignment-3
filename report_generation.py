@@ -6,50 +6,50 @@ This module provides a function for generating reports based on employee data.
 """
 
 def generate_reports():
-Generate Reports Function
-
-    This function generates various reports based on employee data, such as:
-    - List of departments
-    - List of all employees with ID, full name, and department
-    - List of all departments with the average age and salary of employees
-    - List of employees in each department with ID, full name, date of birth, salary,
-      and total salary for department's employees
+    
+#Generate Reports Function
+    #This function generates various reports based on employee data, such as:
+    - List of position
+    - List of all employees with ID, full name, and position
+    - List of all position with the average age and salary of employees
+    - List of employees in each position with ID, full name, date of birth, salary,
+      and total salary for employees position
     """
-departments = get_departments()
-    employees = get_employees()
+position = get_position()
+employees = get_employees()
 
-    print("List of Departments:")
-    for department in departments:
-        print(department)
+    print("List of position: ")
+    for position:
+        print(position)
 
-    print("\nList of Employees:")
+    print("\nList of position: ")
     for employee in employees:
-        print(f"ID: {employee['id']}, Name: {employee['name']}, Department: {employee['department']}")
+        print(f"ID: {employee['id']}, Name: {employee['name']}, position: {employee['position']}")
 
-    print("\nList of Departments with Average Age and Salary:")
-    for department in departments:
-        avg_age, avg_salary = calculate_department_stats(employees, department)
-        print(f"Department: {department}, Average Age: {avg_age}, Average Salary: {avg_salary}")
+    print("\nList of position with Average Age and Salary:")
+    for employee in position:
+        avg_age, avg_salary = calculate_position_stats(employees, position)
+        print(f"employee: {position}, Average Age: {avg_age}, Average Salary: {avg_salary}")
 
-    print("\nEmployees in Each Department:")
-    for department in departments:
-        print(f"\nDepartment: {department}")
-        department_employees = [employee for employee in employees if employee['department'] == department]
-        total_salary = sum(employee['salary'] for employee in department_employees)
-        for employee in department_employees:
+    print("\nEmployees in Each position:")
+    for employees in position:
+        print(f"\nposition: {employee}")
+        position_employees = [employee for employee in employees if employee['position'] == position]
+        total_salary = sum(employee['salary'] for employee in position_employees)
+        for employee in position_employees:
             print(
-                f"ID: {employee['id']}, Name: {employee['name']}, Date of Birth: {employee['dob']}, Salary: {employee['salary']}, Total Salary for Department: {total_salary}")
+                f"ID: {employee['id']}, Name: {employee['name']}, Date of Birth: {employee['dob']}, Salary: {employee['salary']}, Total Salary for position: {total_salary}")
 
 
-def get_departments():
+def get_position():
     return ["Analyst", "Engineer", "Manager"]
 
 
 def get_employees():
     return [
-        {"id": 1, "name": "John Doe", "department": "Manager", "dob": "1980-05-15", "salary": 160000},
-        {"id": 2, "name": "Jane Smith", "department": "Engineer", "dob": "1975-12-20", "salary": 90000},
-        {"id": 3, "name": "Alice Johnson", "department": "Analyst", "dob": "1990-08-10", "salary": 75000},
+        {"id": 1, "name": "Pusker", "position": "Manager", "dob": "1980-05-15", "salary": 160000},
+        {"id": 2, "name": "Anshu", "position": "Engineer", "dob": "1975-12-20", "salary": 90000},
+        {"id": 3, "name": "Anshil", "position": "Analyst", "dob": "1990-08-10", "salary": 75000},
     ]
 
 
