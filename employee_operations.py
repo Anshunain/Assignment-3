@@ -41,7 +41,7 @@ def update_employee():
     ID = int(input("ID of employee to be updated "))
     for employee in employees:
         if employee.id == id:
-            firsr_name = input("new first name of thhe employee ")
+            first_name = input("new first name of thhe employee ")
             last_name = input("new last name of the employee ")
             date_of_birth = input("new date_of_birth of the employ (YYYY/MM/DD) ")
             start_of_year = int(input(new start year of employee ")
