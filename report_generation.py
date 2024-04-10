@@ -6,12 +6,7 @@ This module provides a function for generating reports based on employee data.
 """
 
 def generate_reports():
-
-
-
-
-    """
-    Generate Reports Function
+Generate Reports Function
 
     This function generates various reports based on employee data, such as:
     - List of departments
@@ -73,3 +68,5 @@ def get_age(date_of_birth):
     dob = datetime.datetime.strptime(date_of_birth, "%Y-%m-%d").date()
     age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
     return age
+
+    """
