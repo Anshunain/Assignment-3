@@ -23,14 +23,14 @@ def add_employee():
     employees = load_employee_data()
     employee = {}
     employee['id'] = input("Enter employee ID: ")
-    employee['first_name'] = input("Enter employee's first name: ")
-    employee['last_name'] = input("Enter employee's last name: ")
+    employee['first_name'] = input("Enter employee ID first name: ")
+    employee['last_name'] = input("Enter employee ID last name: ")
     employee['date_of_birth'] = input("Enter employee's date of birth (YYYY-MM-DD): ")
     employee['department'] = input("Enter employee's department: ")
     employee['salary'] = float(input("Enter employee's salary: "))
     employees.append(employee)
     save_employee_data(employees)
-    print("Employee added successfully.")
+    print("Employee added successfully:")
 
 # Function to delete an existing employee
 def delete_employee():
@@ -113,7 +113,7 @@ def main():
         else:
             print("Invalid choice. Please enter a number between 1 and 6.")
 
-if name == "main":
+if 'name'== "main":
     main()
     
     """
