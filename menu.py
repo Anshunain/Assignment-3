@@ -9,9 +9,9 @@ the application.
 """
 from .employee_operations import add_employee, delete_employee, update_employee
 from .report_generation import generate_reports
-
-def main_menu():
+def main_meenu()
     """
+    
     Main Menu Function
     Displays the main menu for the Employee Management System and prompts the user for input.
     Based on the user's choice, it calls the corresponding functions to perform actions such as
