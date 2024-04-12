@@ -5,7 +5,7 @@ This module provides functions for reading from and writing to the text file
 that stores employee data.
 """
 def read_employees():
-Function to load employee data from the file
+# Function to load employee data from the file
 def load_employee_data():
     try:
         with open('employees.json', 'r') as file:
@@ -25,7 +25,7 @@ def add_employee():
     employee['id'] = input("Enter employee ID: ")
     employee['first_name'] = input("Enter employee ID first name: ")
     employee['last_name'] = input("Enter employee ID last name: ")
-    employee['date_of_birth'] = input("Enter employee's date of birth (YYYY-MM-DD):")
+    employee['date_of_birth'] = input("Enter employee's date of birth (YYY-MM-DD):")
     employee['department'] = input("Enter employee's department: ")
     employee['salary'] = float(input("Enter employee's salary: "))
     employees.append(employee)
