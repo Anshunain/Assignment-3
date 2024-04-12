@@ -10,9 +10,9 @@ def generate_reports():
 #Generate Reports Function
     #This function generates various reports based on employee data, such as:
     - List of position
-    - List of all employees with ID, full name, and position
-    - List of all position with the average age and salary of employees
-    - List of employees in each position with ID, full name, date of birth, salary,
+    - List of employees with ID, full name, and position
+    - List of position with the average age and salary of employees
+    - List of employees in position with ID, full name, date of birth, salary,
       and total salary for employees position
     """
 position = get_position()
@@ -42,31 +42,36 @@ employees = get_employees()
 
 
 def get_position():
-    return ["Analyst", "Engineer", "Manager"]
+position1 = input("Manager")
+position2 = input("Engineer")
+position3 = input("Analyst")
 
+if get:
+return ["Analyst", "Engineer", "Manager"]
+elif:
+return error
 
-def get_employees():
-    return [
-        {"id": 1, "name": "Komal", "position": "Manager", "dob": "1980-05-15", "salary": 160000},
-        {"id": 2, "name": "Anshu", "position": "Engineer", "dob": "1975-12-20", "salary": 90000},
-        {"id": 3, "name": "Manpreet", "position": "Analyst", "dob": "1990-08-10", "salary": 75000},
-    ]
-
-
-def calculate_department_stats(employees, department):
-    department_employees = [employee for employee in employees if employee['department'] == department]
+def calculate_position_status(employees, position):
+    position_employees = [employee for employee in employees if employee['position'] == position]
     if len(department_employees) == 0:
         return 0, 0
-    avg_age = sum(get_age(employee['dob']) for employee in department_employees) / len(department_employees)
-    avg_salary = sum(employee['salary'] for employee in department_employees) / len(department_employees)
+    avg_age = sum(get_age(employee['dob']) for employee in position_employees) / len(position_employees)
+    avg_salary = sum(employee['salary'] for employee in position_employees) / len(position_employees)
     return avg_age, avg_salary
 
 
 def get_age(date_of_birth):
     import datetime
     today = datetime.date.today()
-    dob = datetime.datetime.strptime(date_of_birth, "%Y-%m-%d").date()
+    dob = datetime.datetime.strptime(date_of_birth, "Y-m-d").date()
     age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
     return age
-
+    
+def get_employees():
+    return [
+        {"id": 1, "name": "Komal", "position": "Manager", "dob": "1980-05-15", "salary": 160000},
+        {"id": 2, "name": "Anshu", "position": "Engineer", "dob": "1975-12-20", "salary": 90000},
+        {"id": 3, "name": "Manpreet", "position": "Analyst", "dob": "1990-08-10", "salary": 75000},
+    ]
+    
     """
