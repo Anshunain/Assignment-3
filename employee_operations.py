@@ -15,7 +15,8 @@ ID = int(input("please enter the ID for the new employee: "))
             
     """
     Add Employee Function
-    def add(employee detail)
+    def main = add
+    add = input(employee detail)
     return ("first_Name, last_name, date_of_birth, position_hold, salary")
 
     # This function prompts the user to input details for a new employee and adds the employee
@@ -34,7 +35,8 @@ ID = int(input("ID for delete the employees: ")
     
     """
     Delete Employee Function
-    def delete(employee details)
+    def main = delete
+    delete = input(employee details)
     return none
 
     This function prompts the user to input the ID of the employee to be deleted and
@@ -53,6 +55,7 @@ def update_employee():
             position_update = input("enter new position updated of the employees ")
             salary = float(input("new salary of the employee ")
 
+            def main = update
             print(f"employee with ID {ID}update ")
             return
             print(f"No employee with ID{id}found in the system ")
