@@ -6,9 +6,6 @@ This module provides a function for generating reports based on employee data.
 """
 
 def generate_reports():
-    
-#Generate Reports Function
-    #This function generates various reports based on employee data, such as:
     - List of position
     - List of employees with ID, full name, and position
     - List of position with the average age and salary of employees
