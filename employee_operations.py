@@ -16,7 +16,7 @@ ID = int(input("please enter the ID for the new employee: "))
     """
     Add Employee Function
     if employee_name = add:
-    return ('first_Name, last_name, date_of_birth, position_hold, salary")
+    return ("first_Name, last_name, date_of_birth, position_hold, salary")
 
     # This function prompts the user to input details for a new employee and adds the employee
     to the system.
@@ -41,7 +41,7 @@ def update_employee():
     ID = int(input("ID of employee to be updated "))
     for employee in employees:
         if employee.id == id:
-            first_name = input("new first name of thhe employee ")
+            first_name = input("new first name of the employee ")
             last_name = input("new last name of the employee ")
             date_of_birth = input("new date_of_birth of the employ (YYYY/MM/DD) ")
             start_of_year = int(input(new start year of employee ")
