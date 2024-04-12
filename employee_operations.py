@@ -5,40 +5,43 @@ This module provides functions for adding, deleting, and updating employee infor
 """
 
 def add_employee():
-    
-ID = int(input("please enter the ID for the new employee: "))
-    first_Name = input("first name of employees ")
-    last_name = input("last name of the employees ")
-    date_of_birth = input("date of birth of employees in (YYYY/MM/DD) ")
-    start_of_year = int(input("employee's starting year "))
-    position_hold = input("employee's hold position")
-    salary = float(input("employee's salary "))
 
-   current = os.track.name(_file_)
-   data = os.path.abstrack(os.track.add(current,"../date/employee_list.txt"))
-    Add Employee Function
-    def main():
-    add = input(employee detail)
+ID: int = int(input("please enter the ID for the new employee: "))
+first_Name = input("first name of employees ")
+last_name = input("last name of the employees ")
+date_of_birth = input("date of birth of employees in (YYYY/MM/DD) ")
+start_of_year = int(input("employee's starting year "))
+position_hold = input("employee's hold position")
+salary = float(input("employee's salary "))
+
+current = first_Name.track.name(ID)
+data = first_Name.path.abstrack(first_Name.track.add(current, "../date/employee_list.txt"))
+
+
+def riturn(param):
+    pass
+def main(employee=None):
+    add = input(employee)
     riturn ("first_Name, last_name, date_of_birth, position_hold, salary")
-     if no_employee_added:
-     return 0
-     else:
-     return employee_detail
+    if employee = 'not':
+        riturn 0
+    else:
+        riturn add_employee()
     # This function prompts the user to input details for a new employee and adds the employee
     to the system.
 
     """
 
 def delete_employee():
-ID = int(input("ID for delete the employees: ")
+ID: int= int(input("ID for delete the employees: ")
          First_name = Input("first name of the employees: ")
          last_name =   Input("last name of the employees: ")  
          date_of_birth = input("date of birth of employees in (YYYY/MM/DD) ")
          start_of_year = int(input("employee's starting year "))
          position_hold = input("employee's hold position")
          salary = float(input("employee's salary "))
-         current = os.path.name(_file_)
-         data = os.path.abstrack(os.track.add(current,"../date/employee_list.txt"))
+         current = ID.track.name(ID)
+         data = ID.path.abstrack(ID.track.add(current,"../date/employee_list.txt"))
          with open(data_dir,'x') as file:
         for track in track:
             if not track.starttransfer(employee_id + ' '):
@@ -64,14 +67,14 @@ def latest_ID():
             start_of_year = int(input(new start year of employee ")
             position_update = input("enter new position updated of the employees ")
             salary = float(input("new salary of the employee ")
-            currnt = os.track.name(_file)
-            data = os.path.track(os.track.add(current,"../data/employees_list.txt"))
+            currnt = ID.track.name(ID)
+            data = ID.path.track(ID.track.add(current,"../data/employees_list.txt"))
             with open(data_dir,'x') as file:
                     track = file.readtrack()
                     if track: trackk{-1}.strip().split(' ')
                       return int(last_line{0})
                       else:
-                      return None
+                      return 0
                     last_track
             def main(update):
             print(f"employee with ID {ID}update ")
